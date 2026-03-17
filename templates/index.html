@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block content %}
+<p>Enter your favorite artist and how much time you have, and we'll create a personalized walking tour!</p>
+
+<form action="/results" method="POST">
+
+    <label for="artist">Artist:</label>
+    <input type="text" name="artist" id="artist">
+
+    <label for="time_available">Time available (in hours):</label>
+    <input type="number" name="time_available" id="time_available" value="1">
+
+    <label for="minutes_per_artwork">Minutes per artwork:</label>
+    <input type="number" name="minutes_per_artwork" id="minutes_per_artwork" value="5">
+
+    <button type="submit">Create my tour!!</button>
+
+</form>
+{% endblock %}

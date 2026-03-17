@@ -1,0 +1,10 @@
+i asked Claude how to set up flask on my computer, and what import statements i would need, and it gave me 
+a list of commands to enter into my terminal to get it working so I could complete this assignment.
+
+in addition, I asked Claude for help debugging. once I had coded my HTML files and app.py, when I ran it 
+and clicked the link the screen appeared white.to debug this, I asked Claude why a white screen may appear
+ in this instance, and it gave me some ideasfor how to troubleshoot. I tried changing my HTML files, before 
+ realizing I hadnt saved those files in the first place. 
+
+ finally, I asked AI for help understanding how to use my API better. it gave me the idea to use the sorted 
+ function to sort the galleries so the walking path is more efficient. 

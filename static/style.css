@@ -1,0 +1,54 @@
+body {
+    font-family: Arial, sans-serif;
+    color:rgb(38, 65, 50); 
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+footer {
+    margin-top: 40px;
+    border-top: 3px solid rgb(49, 110, 54);
+    padding-top: 10px;
+    font-size: 0.9em;
+}
+
+
+
+label {
+    display: block;
+    margin-top: 15px;
+}
+
+input {
+    margin-top: 5px;
+    padding: 5px;
+}
+
+button {
+    display: block;
+    border-color:rgb(59, 102, 76);
+    margin-top: 30px;
+    padding: 10px 20px;
+}
+
+table {
+    width: 100%;
+    background-color:rgb(226, 249, 221);
+    border-collapse: collapse;
+    margin-top: 30px;
+}
+
+th, td {
+    border: 1px solid rgb(22, 93, 27);
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #eefded;
+}
+
+.error {
+    color: red;
+}

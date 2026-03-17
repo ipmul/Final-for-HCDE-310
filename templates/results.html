@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>here is your walking tour for {{ artist }}! enjoy your visit.</h2>
+
+{% if results|length == 0 %}
+    <p class="error">No artworks found for "{{ artist }}". Please try a different artist.</p>
+    <a href="/">Go back and try again</a>
+{% else %}
+    <p>Here are {{ results|length }} artworks to see in {{ time_available }} hour(s)!</p>
+    <table>
+        <tr>
+            <th>Gallery</th>
+            <th>Title</th>
+            <th>Artist</th>
+            <th>Place of Origin</th>
+        </tr>
+        {% for artwork in results %}
+        <tr>
+            <td>{{ artwork.get("gallery_title") or "Unknown" }}</td>
+            <td>{{ artwork.get("title") or "Unknown" }}</td>
+            <td>{{ artwork.get("artist_title") or "Unknown" }}</td>
+            <td>{{ artwork.get("place_of_origin") or "Unknown" }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+{% endif %}
+
+{% endblock %}
